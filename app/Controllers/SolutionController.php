@@ -18,6 +18,7 @@ class SolutionController
             $this->solution2();
         }
         if ($id == 3) {
+                
             session_start();
             if (empty($_SESSION['token'])) {
                 $_SESSION['token'] = bin2hex(random_bytes(32));

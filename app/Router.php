@@ -43,9 +43,10 @@ class Router
             call_user_func_array(array($classInstance, $matcher['method']), $params);
             
         } catch (MethodNotAllowedException $e) {
+            
             echo 'Route method is not allowed.' .$e;
         } catch (ResourceNotFoundException $e) {
-            
+            print_r($_SERVER['REQUEST_URI']);
             echo 'Route does not exists.'.$e;
         } catch (NoConfigurationException $e) {
             echo 'Configuration does not exists.';
