@@ -21,7 +21,8 @@ class Router
         $matcher = new UrlMatcher($routes, $context);
         try {
             $matcher = $matcher->match($_SERVER['REQUEST_URI']);
-    
+           
+            //echo   $matcher.'<br>';
             // Cast params to int if numeric
             array_walk($matcher, function(&$param)
             {
@@ -44,6 +45,7 @@ class Router
         } catch (MethodNotAllowedException $e) {
             echo 'Route method is not allowed.' .$e;
         } catch (ResourceNotFoundException $e) {
+            
             echo 'Route does not exists.'.$e;
         } catch (NoConfigurationException $e) {
             echo 'Configuration does not exists.';

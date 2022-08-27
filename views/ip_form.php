@@ -136,12 +136,14 @@
                             <div class="card">
                                 <div class="card-header">
 
-                                    <form action="<?php  echo $routeToSubmitIp; ?>" method="post">
+                                    <form action="<?php echo $routeToSubmitIp; ?>" method="post">
+
+                                        <input type="hidden" name="_token" value="<?php echo  $token ?>">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">IP Address</label>
                                             <input type="text" name="ip" class="form-control">
                                         </div>
-                                    
+
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                 </div>
