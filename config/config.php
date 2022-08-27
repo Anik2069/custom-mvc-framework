@@ -5,7 +5,7 @@ define('SITE_NAME', 'your-site-name');
 //App Root
 define('APP_ROOT', dirname(dirname(__FILE__)));
 define('URL_ROOT', '/');
-define('URL_SUBFOLDER', 'Raw php/custom-mvc-framework');
+define('URL_SUBFOLDER', '/'); //Raw php/custom-mvc-framework
 
 //DB Params
 define('DB_HOST', 'your-host');
