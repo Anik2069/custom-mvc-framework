@@ -136,7 +136,7 @@
                             <div class="card">
                                 <div class="card-header">
 
-                                    <form action="../submit-ip" method="post">
+                                    <form action="<?php  echo $routeToSubmitIp; ?>" method="post">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">IP Address</label>
                                             <input type="text" name="ip" class="form-control">

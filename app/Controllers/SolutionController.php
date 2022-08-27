@@ -18,6 +18,7 @@ class SolutionController
             $this->solution2();
         }
         if ($id == 3) {
+            $routeToSubmitIp = $routes->get('submit-ip')->getPath();
             require_once APP_ROOT . '/views/ip_form.php';
         }
         //require_once APP_ROOT . '/views/.php';
